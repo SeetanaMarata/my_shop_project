@@ -1,0 +1,13 @@
+# Создаем файл конфигурации
+@"
+[flake8]
+max-line-length = 88
+extend-ignore = E231, E203, W503, E501
+exclude = 
+    .git,
+    __pycache__,
+    build,
+    dist,
+    htmlcov,
+    *.egg-info
+"@ | Out-File -FilePath .flake8 -Encoding utf8
